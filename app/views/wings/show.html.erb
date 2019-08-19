@@ -1,0 +1,43 @@
+<%= render 'shared/header' %>
+<div id="patienthero">
+
+  <div class="w-75 m-auto px-5 py-4 patient-content">
+    <h1><%= @wing.name %></h1>
+    <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span style="color:#5b9a93">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  </div>
+
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div>
+<h1 class="patients">Patients</h1>
+<br/>
+  <div class="row m-5">
+    <% @wing.patients.each do |patient| %>
+      <div class="col-sm-4">
+        <a data-toggle="collapse" href="#patientRecord<%=patient.id%>" role="button" aria-expanded="false" aria-controls="patientRecord<%=patient.id%>">
+          <div class="card patient-card mb-3">
+            
+            <%= image_tag 'https://i.ibb.co/BVjXZrr/user.png', class: 'patient-icon ml-2 mr-2 mt-2 mx-auto d-block' %>
+            
+            <div class="card-body body-space">
+              <h2 class="card-title text-center patients"><%= patient.name %></h2>
+            </div>
+          </div>
+        </a>
+        <div class="collapse" id="patientRecord<%=patient.id%>">
+          <div class="card card-body">
+           <p><%=patient.first_name%> <%=patient.last_name%>, <%=patient.age%>, <%=patient.sex%><br/>Conditions:<br/>bvjbnouhfodnfo.</p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

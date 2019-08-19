@@ -1,0 +1,10 @@
+.question{
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+}
+
+.question-icon{
+  font-size: 4em;
+  cursor: pointer;
+}

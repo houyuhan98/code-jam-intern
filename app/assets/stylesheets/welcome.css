@@ -1,0 +1,27 @@
+#welcomehero{
+  background-image: url('hero.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:700px;
+  position: relative;
+}
+
+.welcome-content{
+  background-color:#f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 8em;
+  left: 50em;
+}
+
+.to-dep{
+  color:#5b9a93;
+  text-decoration: underline;
+}
+
+.diana{
+  bottom:0;
+  position: absolute;
+  left:70em;
+}

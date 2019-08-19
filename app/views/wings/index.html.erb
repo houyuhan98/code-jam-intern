@@ -1,0 +1,22 @@
+<%= render 'shared/header' %>
+<div id="winghero">
+  <h1>OUR DEPARTMENTS</h1>
+  <br/>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    <br/>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+</div>
+<%= link_to welcomes_path, class: 'help-icon' do %>
+  <i class="material-icons question question-icon animated bounce delay-2s">help_outline</i>
+<% end %>
+<br/>
+<br/>
+<div class="mb-5">
+  <div class="w-75 m-auto px-5 py-4 board-content">
+    <table class="container">
+      <%= render @wings if @wings.any? %>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<%= render 'shared/header' %>
+<div id="welcomehero">
+
+  <div class="w-25 m-auto px-5 py-4 welcome-content">
+    <p>
+      <strong>Welcome</strong> to Shadow Health General Shospital.
+      You will get to know our departments, patients and doctors all at once.
+    </p>
+    <%= link_to wings_path, class: 'to-dep float-right' do %>
+      Continue
+    <% end %>
+  </div>
+
+  <%= image_tag 'Diana-Leader-smiling.png', width:'300px', height:'600px',class: 'diana' %>
+
+</div>

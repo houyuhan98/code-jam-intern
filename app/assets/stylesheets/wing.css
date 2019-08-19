@@ -1,0 +1,53 @@
+#winghero{
+  background-image: url("leadership.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height:600px;
+  position: relative;
+}
+
+#winghero h1{
+  color:white;
+  bottom:6em;
+  left:2em;
+  position: absolute;
+}
+
+#winghero p{
+  color:white;
+  bottom:11em;
+  left:4em;
+  position: absolute;
+}
+
+.dep-c{
+  color:white;
+  font-size:30px;
+}
+
+.dep-next{
+  color:white;
+}
+
+.dep-next :hover{
+  color:#3d3d3f;
+}
+
+.help-icon{
+  color:#637897;
+}
+
+.help-icon :hover{
+  color:white;
+}
+
+.board-content{
+  background-color:#f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.row-color{
+  background-color:#5b9a93;
+  border-radius: 10px;
+}
